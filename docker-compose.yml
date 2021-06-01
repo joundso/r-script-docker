@@ -1,0 +1,10 @@
+version: "3.9" # optional since v1.27.0
+services:
+  r-script:
+    build: .
+    # image: imagename:0.0.1
+    # environment:
+    #   - "WORK_DIR=${PWD}"
+    volumes:
+      - "./data:/mount/data"
+      - "./out:/mount/out"

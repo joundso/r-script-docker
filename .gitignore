@@ -1,0 +1,24 @@
+## Ignore everything
+/*
+/*/
+
+## But not these files...
+!.gitignore
+!docker-compose.yml
+!renovate.json
+!README.md
+!.env
+!Dockerfile
+
+## Include this folder and all of its content:
+!/R
+!/data
+
+## Ignore this folders content:
+/R/*
+/data/*
+
+## But not these files...
+!/R/*.R
+.Rproj.user
+!/data/titanic.csv
