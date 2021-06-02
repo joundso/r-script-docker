@@ -49,7 +49,7 @@ plot <-
   ggplot2::geom_boxplot() +
   ggplot2::xlab("Class") +
   ggplot2::ylab("Age") +
-  ggplot2::labs(fill = "Survived")
+  ggplot2::labs(fill = "Survived?")
 
 ## Show the plot:
 plot
