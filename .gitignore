@@ -22,6 +22,7 @@
 !/R/data/titanic.csv
 !/R/out
 /R/out/*
+!/R/out/plot.pdf
 !/R/.env
 
 ## Make sure these are also NOT included:
