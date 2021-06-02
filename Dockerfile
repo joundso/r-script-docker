@@ -1,10 +1,22 @@
-FROM rocker/r-base:4.1.0
+FROM r-base:4.1.0
 ## Base image https://hub.docker.com/r/rocker/r-base/tags?page=1&ordering=last_updated
 
+## Install dependencies for `rJava`.
+## Note: `liblzma-dev` and `libbz2-dev` are additional system
+## dependencies for compiling `rJava`.
+## See <https://stackoverflow.com/a/62001619>.
+RUN apt-get -y update && apt-get install -y \
+    ## `libpq-dev` for `RPostgres`:
+    libpq-dev \
+    ## `libxml2-dev` for `xml2`:
+    libxml2-dev \
+    default-jdk \
+    r-cran-rjava \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/
+
 ## Create directories:
-RUN mkdir -p /mount/data
 RUN mkdir -p /mount/R
-RUN mkdir -p /mount/out
 
 ## Install dependencies:
 COPY ./R/install_packages.R /mount/R/install_packages.R

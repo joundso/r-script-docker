@@ -7,18 +7,24 @@
 !docker-compose.yml
 !renovate.json
 !README.md
-!.env
 !Dockerfile
 
 ## Include this folder and all of its content:
 !/R
-!/data
 
 ## Ignore this folders content:
 /R/*
-/data/*
 
 ## But not these files...
 !/R/*.R
+!/R/data
+/R/data/*
+!/R/data/titanic.csv
+!/R/out
+/R/out/*
+!/R/.env
+
+## Make sure these are also NOT included:
 .Rproj.user
-!/data/titanic.csv
+.Rhistory
+.Rdata

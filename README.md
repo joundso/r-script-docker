@@ -13,13 +13,13 @@
     cd r-script-docker
     ```
 
-2. Run the container:
+2. Run the container (maybe you need to prefix `sudo`):
 
     ```bash
-    sudo docker compose up --build
+    docker-compose up --build
     ```
 
-3. Stop the environment by running `sudo docker compose down`.
+3. Stop the environment by running `docker-compose down`.
 
 ## Further information
 

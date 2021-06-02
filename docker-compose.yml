@@ -6,5 +6,4 @@ services:
     # environment:
     #   - "WORK_DIR=${PWD}"
     volumes:
-      - "./data:/mount/data"
-      - "./out:/mount/out"
+      - "./R/out:/mount/R/out"

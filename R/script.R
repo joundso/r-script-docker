@@ -46,7 +46,7 @@ plot <-
     y = get("Age"),
     fill = get("Survived")
   )) +
-  geom_boxplot() +
+  ggplot2::geom_boxplot() +
   ggplot2::xlab("Class") +
   ggplot2::ylab("Age") +
   ggplot2::labs(fill = "Survived")
