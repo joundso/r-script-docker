@@ -1,5 +1,5 @@
 FROM r-base:4.1.0
-## Base image https://hub.docker.com/r/rocker/r-base/tags?page=1&ordering=last_updated
+## Base image <https://hub.docker.com/_/r-base?tab=tags&page=1&ordering=last_updated>
 
 ## Install dependencies for `rJava`.
 ## Note: `liblzma-dev` and `libbz2-dev` are additional system
