@@ -19,7 +19,9 @@
     docker-compose up --build
     ```
 
-3. Stop the environment by running `docker-compose down`.
+3. While the script has finished running, you should see a plot named `plot.pdf` in `[./R/out/]`(./R/out/)
+
+4. Stop the environment by running `docker-compose down`.
 
 ## Further information
 
