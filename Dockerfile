@@ -1,4 +1,4 @@
-FROM r-base:4.2.2
+FROM r-base:4.2.3
 ## Base image <https://hub.docker.com/_/r-base?tab=tags&page=1&ordering=last_updated>
 
 ## Install dependencies for `rJava`.
